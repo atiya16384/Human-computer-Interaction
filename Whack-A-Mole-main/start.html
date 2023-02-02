@@ -1,0 +1,22 @@
+<html lang="en">
+  <head>
+    <title>Whack-A-Mole Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  </head>
+
+  <body onload="StartUpSettings()">
+    <script type="text/javascript">
+      function StartUpSettings() {
+        var win = window.open(
+          "logic.html",
+          "",
+          "resizable=no, width=1024, height=768"
+        );
+        win.moveTo(screen.width / 2 - 512, screen.height / 2 - 384);
+        window.close();
+      }
+    </script>
+  </body>
+</html>

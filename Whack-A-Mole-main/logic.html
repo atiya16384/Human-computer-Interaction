@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Whack-A-Mole Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+       .green-circle {
+            height: 30px;
+            width: 30px;
+            background-color: green;
+            /* MAKE THE DOT AT THE CENTER OF THE SCREEN */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+        }
+        .red-circle {
+            height: 30px;
+            width: 30px;
+            background-color: red;
+            /* Hide it */
+            display: none;
+            /* MAKE THE DOT AT THE CENTER OF THE SCREEN */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+        }
+        
+    </style>
+  </head>
+
+  <body>
+    <div id="game">
+        <h2 id="round">Round: 1</h2>
+        <h2>Your score:</h2>
+        <h2 id="score">0</h2>
+
+        <h2>Time Left:</h2>
+        <!-- Add the game elements here -->
+        <div id="home-circle" class="green-circle"></div>
+
+        </div>
+        <div id="target" class="red-circle"></div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
